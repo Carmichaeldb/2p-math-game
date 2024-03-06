@@ -2,7 +2,7 @@ require './player'
 require './question'
 
 class Game
-  puts "Starting new Math Game..."
+  puts "Starting new Math Game. Ready... Set... PLAY!"
 
   def initialize
     @player1 = Player.new("Player 1")

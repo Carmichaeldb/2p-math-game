@@ -34,7 +34,8 @@ Task 2: Write their Roles
   player_2: Created from the player class with the name of "Player 2". 
   player_turn: stores which players turn it currently is and is initialized as player_1. 
   
-  The game will have two methods. 
+  The game will have three methods. 
+  switch_player: will switch player back and forth from player 1 to player 2 and vice versa.
   ask_question: 
   - Will create the question from the question class and call the create_question method of the question class and put the question 
     to the terminal and wait for a response. 

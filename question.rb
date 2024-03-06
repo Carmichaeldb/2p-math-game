@@ -8,9 +8,9 @@ class Question
     "what does #{@num1} plus #{@num2} equal?"
   end
 
-  def check_answer(num)
+  def check_answer(answer)
   sum = @num1 + @num2
-  sum == num.to_i
+  sum == answer.to_i
   end
 
 end
