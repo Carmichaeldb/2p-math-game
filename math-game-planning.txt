@@ -1,0 +1,48 @@
+Task 1: Nouns for Classes
+class Game
+class Question
+class Player
+
+Task 2: Write their Roles
+  Player:
+  The Player class will have 2 variables.
+  Name: name using parameter provided when class initialized.
+  Score: set to 3 when initiatized.
+
+  The player will have one method.
+  reduce_score: 
+  - reduce the score by 1 when called. 
+  
+  The player class will also use attr_reader to make the score and name readable.
+
+  Question:
+  The question class will have 2 variables. 
+  Num1: randomly generated number between 1-20 
+  Num2: randomly generated number between 1-20 
+  
+  It will have two methods.
+  create_question: 
+  - Create the question using the two number variables.
+  
+  check_answer: 
+  - Checks the answer of the question with a number provided
+  - returns true or false
+  
+  Game:
+  Game class have 3 variables.
+  player_1: Created from Player class with the name of "Player 1". 
+  player_2: Created from the player class with the name of "Player 2". 
+  player_turn: stores which players turn it currently is and is initialized as player_1. 
+  
+  The game will have two methods. 
+  ask_question: 
+  - Will create the question from the question class and call the create_question method of the question class and put the question 
+    to the terminal and wait for a response. 
+  - Once the response is recieved it will call the check_answer method from the question class. 
+  - If the answer matches it will change the current_player to be the other player and call current_scores method. 
+  - If it doesn't match it calls the current_player's reduce_score method and change the current_player and call current_scores method.
+  
+  current_scores: 
+  - Will check if any of the player scores = 0. 
+  - If it does it will end the game and delcare the winner.v 
+  - If no one has a score of 0 it will call the ask_question method.
